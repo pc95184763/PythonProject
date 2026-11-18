@@ -24,3 +24,14 @@
 
 
 
+5. 变量作用域  ()
+    Local局部作用域
+    Enclosing 嵌套作用域
+    Global 全局作用域
+    Builtin 内建作用域
+    在查找的时候, 会按照如下顺序进行查找: 局部 -> 嵌套 -> 全局 -> 内建
+
+    只有模块module, 类 class, 以及函数 def, lambda 才会引入新的作用域,
+    其他的代码块(if/elif, try/except, for/while) 不会引入新的作用域
+
+
