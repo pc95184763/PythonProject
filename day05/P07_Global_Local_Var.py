@@ -1,4 +1,33 @@
 """
+    演示了全局变量以及局部变量
+"""
+
+
+"""
+sum = 0
+
+def add(num1, num2): # 形参相当于定义在局部变量
+    print(sum )
+
+add(1,2)
+print(sum)
+"""
+
+sum = 0
+
+def add(num1, num2):
+    sum = num1 + num2
+    print("函数内局部变量的zhi", sum, id(sum) )
+    return sum
+
+add(10,20)
+
+
+
+
+
+
+"""
     该案例演示了全局变量以及局部变量
 """
 
